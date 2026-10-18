@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-t="title">Propuesta de redes sociales para Westchester Dentistry</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#587C95">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14212b; --ink-2:#31414d; --muted:#5a6872;
+  --steel:#587C95; --steel-d:#3b5a72; --steel-l:#dbe5ec;
+  --gold:#BF9244; --gold-d:#7d5a1c; --gold-l:#f1e4cc;
+  --mist:#eef2f5; --paper:#f7f9fb; --white:#fff;
+  --line:rgba(20,33,43,.12);
+  --ease:cubic-bezier(.23,1,.32,1);
+  --gutter:clamp(16px,4vw,48px);
+  --r:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%;color-scheme:light}
+body{font-family:Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{width:min(1200px,100% - var(--gutter)*2);margin-inline:auto}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque",Figtree,sans-serif;font-weight:600;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:76px}
+.brand{display:flex;align-items:center;text-decoration:none;flex:none}
+.brand img{height:56px;width:auto;object-fit:contain}
+.top-r{display:flex;align-items:center;gap:6px}
+.steps{display:flex;gap:2px}
+.steps a{font-size:14px;font-weight:600;text-decoration:none;color:var(--muted);padding:9px 14px;border-radius:99px;transition:background .2s var(--ease),color .2s var(--ease)}
+.steps a b{color:var(--gold-d);margin-right:6px;font-weight:700}
+.steps a.on{background:var(--steel-l);color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.steps a:hover{background:var(--steel-l);color:var(--ink)}}
+.lang{display:flex;padding:3px;border-radius:99px;background:var(--mist);border:1px solid var(--line);margin-left:8px}
+.lang button{border:0;background:transparent;min-width:44px;height:36px;border-radius:99px;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--muted);transition:background .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.lang button[aria-pressed=true]{background:var(--ink);color:#fff}
+.lang button:active{transform:scale(.96)}
+
+/* hero */
+.hero{position:relative;padding:clamp(40px,7vw,88px) 0 clamp(48px,7vw,88px);background:
+  radial-gradient(900px 520px at 92% 8%,rgba(191,146,68,.20),transparent 60%),
+  radial-gradient(760px 520px at 0% 100%,rgba(88,124,149,.22),transparent 62%),
+  linear-gradient(180deg,#eaf0f4,var(--paper))}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,72px);align-items:center}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-d)}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.04;margin:16px 0 20px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--steel-d);background:linear-gradient(transparent 80%,rgba(191,146,68,.45) 80%);padding-bottom:2px}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--ink-2);max-width:48ch}
+.for{margin-top:24px;font-size:16px;color:var(--ink-2)}
+.for b{color:var(--ink)}
+.path{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px}
+.path a{display:block;text-decoration:none;padding:14px 16px;border-radius:var(--r);background:var(--white);border:1px solid var(--line);transition:transform .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease)}
+.path a:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.path a:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 14px 30px -18px rgba(20,33,43,.35)}}
+.path small{display:block;font-size:12px;letter-spacing:.14em;color:var(--gold-d);font-weight:700}
+.path span{display:block;margin-top:2px;font-weight:600;font-size:15px;line-height:1.3}
+.collage{position:relative}
+.collage .main{border-radius:28px;overflow:hidden;box-shadow:0 40px 70px -34px rgba(20,33,43,.55);aspect-ratio:4/4.6;background:var(--steel-l)}
+.collage .main img{width:100%;height:100%;object-fit:cover;object-position:68% 50%}
+.collage .ring{position:absolute;right:-26px;top:-26px;width:46%;aspect-ratio:1;border-radius:50%;border:3px solid var(--gold);opacity:.7;z-index:-1}
+.collage .badge{position:absolute;left:-14px;bottom:28px;background:var(--white);border-radius:var(--r);padding:14px 18px 14px 16px;box-shadow:0 22px 44px -22px rgba(20,33,43,.5);display:flex;align-items:center;gap:12px;border:1px solid var(--line)}
+.collage .badge b{font-family:"Bricolage Grotesque",sans-serif;font-size:34px;line-height:1;color:var(--ink)}
+.collage .badge span{font-size:13px;line-height:1.3;color:var(--ink-2);font-weight:500}
+.stars{display:flex;gap:2px;color:var(--gold)}
+.stars svg{width:15px;height:15px;fill:currentColor}
+
+/* secciones */
+section.blk{padding:clamp(56px,9vw,112px) 0}
+section.s-hoy{background:var(--white)}
+section.s-prop{background:linear-gradient(180deg,var(--paper),#e6edf2)}
+section.s-mat{background:var(--white)}
+.sec-head{max-width:760px;margin-bottom:clamp(28px,5vw,52px)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.16em;font-weight:700;text-transform:uppercase;color:var(--gold-d);margin-bottom:12px}
+.kicker b{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(--white);background:var(--steel-d);border-radius:99px;padding:2px 10px;letter-spacing:.04em}
+.sec-head h2{font-size:clamp(30px,4.6vw,52px);line-height:1.06;text-wrap:balance}
+.sec-head p{margin-top:14px;color:var(--ink-2);font-size:clamp(16px,1.7vw,18px);max-width:60ch}
+
+/* HOY */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:clamp(28px,4vw,44px);border-top:2px solid var(--ink)}
+.stat{padding:22px 20px 6px 0}
+.stat+.stat{padding-left:20px;border-left:1px solid var(--line)}
+.stat b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:clamp(40px,5.4vw,68px);line-height:1;letter-spacing:-.03em;color:var(--steel-d)}
+.stat span{display:block;margin-top:8px;font-size:14.5px;color:var(--ink-2);line-height:1.35}
+.now{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,26px);align-items:stretch}
+.shot{border-radius:var(--r);border:1px solid var(--line);background:var(--paper);overflow:hidden;display:flex;flex-direction:column}
+.shot .win{aspect-ratio:3/4;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+.shot .win img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.shot figcaption{padding:16px 18px 20px;display:grid;gap:4px}
+.shot figcaption b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);font-weight:700}
+.shot figcaption span{font-size:16px;font-weight:600;line-height:1.35}
+.shot figcaption small{font-size:14px;color:var(--muted);line-height:1.4}
+.zoomable{cursor:zoom-in;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.zoomable:active{transform:scale(.985)}
+@media (hover:hover) and (pointer:fine){.zoomable:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(20,33,43,.5)}}
+.review{border-radius:var(--r);padding:clamp(24px,3vw,36px);background:linear-gradient(160deg,var(--steel-d),#27425a);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:24px;position:relative;overflow:hidden}
+.review>*{position:relative;z-index:1}
+.review::after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;border:3px solid rgba(191,146,68,.55)}
+.review .stars{color:var(--gold)}
+.review .stars svg{width:20px;height:20px}
+.review h3{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-family:Figtree,sans-serif;font-weight:700;color:#d8e4ec}
+.review blockquote{font-size:clamp(17px,1.7vw,19px);line-height:1.5;font-weight:500}
+.review cite{font-style:normal;font-weight:700;display:block}
+.review cite small{display:block;font-weight:500;color:#cbd9e3;font-size:14px;margin-top:2px}
+.review .note{font-size:13px;color:#cbd9e3}
+
+/* PROPUESTA */
+.stage{display:grid;grid-template-columns:1fr minmax(300px,480px) 1fr;gap:clamp(20px,4vw,56px);align-items:stretch}
+.phone-col{position:relative;perspective:1400px}
+.phone{position:relative;border-radius:clamp(44px,12vw,60px);padding:clamp(9px,2.6vw,12px);background:linear-gradient(145deg,#26323c,#080d12 60%);box-shadow:0 0 0 1.5px rgba(20,33,43,.25),0 50px 90px -34px rgba(20,33,43,.7);transform-style:preserve-3d;transition:transform .5s var(--ease);cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+.phone .screen{border-radius:clamp(34px,9.6vw,48px);overflow:hidden;background:#fff}
+.phone .screen img{width:100%;height:auto}
+.phone .island{position:absolute;top:calc(clamp(9px,2.6vw,12px) + 10px);left:50%;transform:translateX(-50%);width:26%;height:clamp(16px,4.6vw,24px);border-radius:99px;background:#080d12;z-index:2}
+.phone .tap{position:absolute;right:16px;bottom:16px;z-index:3;font-size:13px;font-weight:700;background:rgba(255,255,255,.94);color:var(--ink);padding:10px 16px;border-radius:99px;box-shadow:0 8px 20px -8px rgba(20,33,43,.5);display:flex;gap:8px;align-items:center}
+.glow{position:absolute;inset:6% 0;background:radial-gradient(closest-side,rgba(191,146,68,.32),transparent);filter:blur(34px);z-index:-1}
+.notes{display:flex;flex-direction:column;justify-content:space-between;gap:22px;padding:5% 0}
+.note{border-left:3px solid var(--gold);padding:2px 0 2px 16px;max-width:300px}
+.notes.r .note{margin-left:auto}
+.note h3{font-size:19px;margin-bottom:4px}
+.note p{font-size:15.5px;color:var(--ink-2);line-height:1.5}
+.posts-head{margin:clamp(56px,8vw,96px) 0 18px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.posts-head h3{font-size:clamp(26px,3.6vw,38px)}
+.posts-head p{font-size:15px;color:var(--ink-2)}
+.rail-wrap{position:relative}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gutter) 24px;margin:0 calc(var(--gutter)*-1);scrollbar-width:thin;scrollbar-color:var(--steel) transparent;-webkit-overflow-scrolling:touch;scroll-padding-inline:var(--gutter)}
+.rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:var(--steel);border-radius:9px}
+.post{flex:0 0 clamp(236px,66vw,320px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--ink);cursor:zoom-in;padding:0;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.post:active{transform:scale(.98)}
+@media (hover:hover) and (pointer:fine){.post:hover{transform:translateY(-6px);box-shadow:0 28px 50px -28px rgba(20,33,43,.7)}}
+.post img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.arrows{display:none;gap:8px}
+@media (hover:hover) and (pointer:fine){.arrows{display:flex}}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;transition:transform .16s var(--ease),background .2s var(--ease),border-color .2s}
+.arrows button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.arrows button:active{transform:scale(.94)}
+.arrows svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* MATERIAL */
+.mat{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,2vw,24px)}
+.ph{margin:0;display:flex;flex-direction:column;gap:10px}
+.ph .im{border-radius:var(--r);overflow:hidden;background:var(--mist);position:relative}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{font-size:14.5px;color:var(--ink-2);font-weight:500}
+.ph.por{grid-column:span 2;grid-row:span 2}
+.ph.por .im{flex:1;min-height:0}
+.ph.por img{object-position:50% 12%}
+.ph.land{grid-column:span 2}
+.ph.land .im{aspect-ratio:16/9}
+.ph.land2{grid-column:span 3}
+.ph.land2 .im{aspect-ratio:16/9}
+.mat-note{margin-top:22px;color:var(--muted);font-size:14px}
+
+/* CIERRE */
+.close{padding:clamp(56px,9vw,112px) 0 36px;background:linear-gradient(180deg,#fff,var(--mist))}
+.close-card{position:relative;overflow:hidden;border-radius:clamp(24px,4vw,36px);padding:clamp(30px,6vw,72px);background:
+  radial-gradient(640px 360px at 92% 0%,rgba(191,146,68,.28),transparent 62%),
+  linear-gradient(150deg,#22394d,#14212b 70%);color:#fff}
+.close-card .kicker{color:var(--gold)}
+.close-card h2{font-size:clamp(30px,5vw,56px);line-height:1.05;max-width:20ch;text-wrap:balance}
+.close-card h2 em{font-style:normal;color:var(--gold)}
+.close-card p.lead{margin-top:18px;color:#cdd9e1;max-width:58ch;font-size:clamp(16px,1.7vw,18px)}
+.svc{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.svc div{padding:20px;border-radius:var(--r);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);font-size:15px;line-height:1.5;color:#dbe5ec}
+.svc b{display:block;font-size:17px;color:#fff;margin-bottom:4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:600}
+.svc svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.brandnote{margin-top:18px;font-size:14.5px;color:#aebfcc}
+.sign{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16)}
+.sign p{font-size:15px;color:#cdd9e1}
+.sign b{color:#fff;display:block;font-size:18px;font-family:"Bricolage Grotesque",sans-serif;font-weight:600}
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:99px;background:var(--gold);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;overflow-wrap:anywhere;transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s}
+.contact li+li a{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+@media (hover:hover) and (pointer:fine){.contact a:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}.contact li+li a:hover{background:rgba(255,255,255,.12)}}
+.contact a:active{transform:scale(.97)}
+.contact svg{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+footer{padding:28px 0 48px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+
+/* lightbox */
+dialog{border:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:#fff;opacity:0;transition:opacity .2s var(--ease),overlay .2s allow-discrete,display .2s allow-discrete}
+dialog[open]{opacity:1}
+@starting-style{dialog[open]{opacity:0}}
+dialog::backdrop{background:rgba(10,18,25,.92);backdrop-filter:blur(6px)}
+dialog .box{height:100%;overflow:auto;display:flex;justify-content:center;padding:72px 12px 28px;-webkit-overflow-scrolling:touch}
+dialog img{width:min(560px,100%);height:auto;border-radius:var(--r);align-self:flex-start;background:#fff;transform:scale(.97);transition:transform .25s var(--ease)}
+dialog[open] img{transform:none}
+@starting-style{dialog[open] img{transform:scale(.97)}}
+dialog.wide img{width:min(1100px,100%)}
+.lbbtn{position:fixed;z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(20,33,43,.85);color:#fff;font-size:24px;display:grid;place-items:center;transition:transform .16s var(--ease),background .2s}
+.lbbtn:active{transform:scale(.94)}
+#lbx{top:14px;right:14px}
+#lbp{left:12px;top:50%}#lbn{right:12px;top:50%}
+.lbbtn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease),transform .6s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:1fr}
+  .collage{max-width:560px}
+  .collage .main{aspect-ratio:16/11}
+  .stage{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+  .phone-col{order:-1}
+  .notes{padding:0}
+  .notes.r .note{margin-left:0}
+  .note{max-width:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line);margin-top:18px}
+  .now{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .review{grid-column:1/-1}
+  .svc{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .steps{display:none}
+  .top .wrap{height:72px}
+  .brand img{height:56px}
+  .path{grid-template-columns:1fr}
+  .path a{display:flex;align-items:baseline;gap:14px}
+  .path span{margin:0}
+  .collage .badge{left:8px;bottom:12px}
+  .collage .ring{right:-8px;top:-14px}
+  .now{grid-template-columns:1fr}
+  .mat{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ph.por{grid-column:span 1;grid-row:auto}
+  .ph.por .im{aspect-ratio:4/5;flex:none}
+  .ph.land,.ph.land2{grid-column:1/-1}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:420px){
+  .lang button{min-width:40px}
+  .brand img{height:56px;max-width:60vw}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Westchester Dentistry"><img src="img/logo.webp" alt="Logo de Westchester Dentistry" data-ta="a_logo" width="248" height="56"></a>
+    <div class="top-r">
+      <nav class="steps" aria-label="Recorrido" data-ta="a_nav">
+        <a href="#hoy"><b>01</b><span data-t="n1">Hoy</span></a>
+        <a href="#propuesta"><b>02</b><span data-t="n2">Propuesta</span></a>
+        <a href="#material"><b>03</b><span data-t="n3">Material</span></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow rv" data-t="eyebrow">Propuesta de redes sociales</div>
+        <h1 class="rv" style="--d:.06s" data-t="h1">Sus redes, a la altura de <em>su consultorio</em>.</h1>
+        <p class="lead rv" style="--d:.12s" data-t="lead">Armamos una muestra de cómo podrían verse las redes de Westchester Dentistry, con su logo, sus colores y las fotos reales de su consultorio.</p>
+        <div class="for rv" style="--d:.18s"><span data-t="for">Preparada para <b>Dr. Hansel Gonzalez</b> · Miami, FL</span></div>
+        <div class="path rv" style="--d:.24s">
+          <a href="#hoy"><small>01</small><span data-t="p1">Cómo están hoy</span></a>
+          <a href="#propuesta"><small>02</small><span data-t="p2">Cómo podrían verse</span></a>
+          <a href="#material"><small>03</small><span data-t="p3">Material que ya tenemos</span></a>
+        </div>
+      </div>
+      <div class="collage rv" style="--d:.1s">
+        <div class="ring" aria-hidden="true"></div>
+        <div class="main"><img src="img/dr-gonzalez-tomografia.webp" alt="El Dr. Gonzalez explicando una tomografía en el consultorio" data-ta="a_hero" width="1600" height="900"></div>
+        <div class="badge">
+          <b data-t="g50">5,0</b>
+          <div><div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.600L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg></div><span data-t="g224">224 reseñas en Google</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 HOY -->
+  <section class="blk s-hoy" id="hoy">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="kicker"><b>01</b><span data-t="k1">Hoy</span></div>
+        <h2 data-t="h_hoy">Un excelente punto de partida</h2>
+        <p data-t="p_hoy">Sus pacientes ya hablan muy bien de usted en Google. Esto es lo que encontramos hoy en Instagram.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat rv"><b data-t="s1n">5,0</b><span data-t="s1">calificación en Google</span></div>
+        <div class="stat rv" style="--d:.06s"><b data-count="224">224</b><span data-t="s2">reseñas en Google</span></div>
+        <div class="stat rv" style="--d:.12s"><b data-count="393">393</b><span data-t="s3">seguidores en @drhanselgonzalez</span></div>
+        <div class="stat rv" style="--d:.18s"><b data-count="8">8</b><span data-t="s4">publicaciones en esa cuenta</span></div>
+      </div>
+
+      <div class="now">
+        <figure class="shot rv">
+          <button class="win zoomable" type="button" data-zoom="img/hoy-ig-perfil.webp" data-alt="Captura del perfil de Instagram @drhanselgonzalez" data-group="hoy" style="border:0;padding:0;display:block;width:100%"><img src="img/hoy-ig-perfil.webp" alt="Captura del perfil de Instagram @drhanselgonzalez: 393 seguidores, 309 seguidos, enlace a gonzalezdmd.com" data-ta="a_perfil" width="860" height="1864" loading="lazy"></button>
+          <figcaption><b data-t="c1b">Instagram, perfil</b><span data-t="c1">Es la cuenta del doctor, no la del consultorio</span><small data-t="c1s">No encontramos una cuenta propia de Westchester Dentistry.</small></figcaption>
+        </figure>
+        <figure class="shot rv" style="--d:.1s">
+          <button class="win zoomable" type="button" data-zoom="img/hoy-ig-grilla.webp" data-alt="Captura de la grilla de publicaciones de @drhanselgonzalez" data-group="hoy" style="border:0;padding:0;display:block;width:100%"><img src="img/hoy-ig-grilla.webp" alt="Captura de la grilla de Instagram con radiografías, planificación de implantes y fotos clínicas" data-ta="a_grilla" width="430" height="932" loading="lazy"></button>
+          <figcaption><b data-t="c2b">Instagram, publicaciones</b><span data-t="c2">Casos clínicos y radiografías</span><small data-t="c2s">8 publicaciones, sin fotos del equipo ni del consultorio.</small></figcaption>
+        </figure>
+        <aside class="review rv" style="--d:.2s">
+          <div>
+            <h3 data-t="rv_h">Lo que dicen sus pacientes en Google</h3>
+            <div class="stars" aria-hidden="true" style="margin-top:14px"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.300 6.100 20.600l1.300-6.600L2.500 9.400l6.600-.8z"/></svg></div>
+          </div>
+          <blockquote lang="en">“My family and I have been coming to this office for a few years now. It has truly been a great blessing for us. All the staff members are very professional and caring; they treat their patients like family. I recommend this place 100%—you will receive the best care and ensure the best health for your smile.”</blockquote>
+          <div><cite>Madelaynes P.<small data-t="rv_s">Reseña en Google, en su idioma original</small></cite></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 PROPUESTA -->
+  <section class="blk s-prop" id="propuesta">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="kicker"><b>02</b><span data-t="k2">Propuesta</span></div>
+        <h2 data-t="h_prop">Así podrían verse sus redes</h2>
+        <p data-t="p_prop">Su logo como foto de perfil, historias destacadas por tratamiento y una grilla con diseño propio, en el azul acero y el dorado de su marca.</p>
+      </div>
+
+      <div class="stage">
+        <div class="notes l">
+          <div class="note rv"><h3 data-t="n_l1h">Perfil con su marca</h3><p data-t="n_l1">El isotipo del consultorio como foto de perfil, con teléfono, dirección y botones de contacto a la vista.</p></div>
+          <div class="note rv" style="--d:.08s"><h3 data-t="n_l2h">Historias destacadas</h3><p data-t="n_l2">Implantes, Invisalign, estética, equipo, urgencias y cómo visitarlos, ordenados para que el paciente encuentre lo que busca.</p></div>
+          <div class="note rv" style="--d:.16s"><h3 data-t="n_l3h">Grilla coherente</h3><p data-t="n_l3">Cada publicación con el mismo estilo, sus colores y sus fotos reales, reconocible a primera vista.</p></div>
+        </div>
+
+        <div class="phone-col rv" style="--d:.08s">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="phone zoomable" id="phone" role="button" tabindex="0" aria-label="Ampliar el feed propuesto" data-ta="a_phone" data-zoom="img/feed.webp" data-alt="Feed propuesto de Instagram de Westchester Dentistry completo" data-wide="0">
+            <div class="island" aria-hidden="true"></div>
+            <div class="screen"><img src="img/feed.webp" alt="Feed propuesto de Instagram: perfil con isotipo, historias destacadas y grilla de seis publicaciones diseñadas" data-ta="a_feed" width="1080" height="2197"></div>
+            <div class="tap" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.300-4.300M11 8v6M8 11h6"/></svg><span data-t="tap">Tocar para ampliar</span></div>
+          </div>
+        </div>
+
+        <div class="notes r">
+          <div class="note rv"><h3 data-t="n_r1h">Presenta a su equipo</h3><p data-t="n_r1">Publicaciones que cuentan quiénes son el Dr. Gonzalez y la Dra. Abrahao y cuál es su formación.</p></div>
+          <div class="note rv" style="--d:.08s"><h3 data-t="n_r2h">Servicios que se entienden</h3><p data-t="n_r2">Implantes y All-on-4, Invisalign, carillas, coronas y puentes, en mensajes cortos y claros.</p></div>
+          <div class="note rv" style="--d:.16s"><h3 data-t="n_r3h">Fácil de visitar</h3><p data-t="n_r3">Dirección y teléfono a la vista, para que pedir una cita sea cuestión de un toque.</p></div>
+        </div>
+      </div>
+
+      <div class="posts-head rv">
+        <div><h3 data-t="ph">Seis ejemplos, de cerca</h3></div>
+        <div style="display:flex;align-items:center;gap:16px"><p data-t="ph_p">Deslice para ver más, toque para ampliar</p>
+          <div class="arrows"><button type="button" id="rp" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" id="rn" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>
+        </div>
+      </div>
+      <div class="rail rv" id="rail" aria-label="Publicaciones propuestas" data-ta="a_rail">
+        <button class="post" type="button" data-zoom="img/post1.webp" data-alt="Publicación propuesta 1" data-group="posts"><img src="img/post1.webp" alt="Publicación propuesta 1: Meet Dr. Hansel Gonzalez" width="1080" height="1350" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post2.webp" data-alt="Publicación propuesta 2" data-group="posts"><img src="img/post2.webp" alt="Publicación propuesta 2: Meet Dr. Thalia Abrahao" width="1080" height="1350" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post3.webp" data-alt="Publicación propuesta 3" data-group="posts"><img src="img/post3.webp" alt="Publicación propuesta 3: Dental implants and All-on-4" width="1080" height="1350" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post4.webp" data-alt="Publicación propuesta 4" data-group="posts"><img src="img/post4.webp" alt="Publicación propuesta 4: Invisalign, veneers, crowns and bridges" width="1080" height="1350" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post5.webp" data-alt="Publicación propuesta 5" data-group="posts"><img src="img/post5.webp" alt="Publicación propuesta 5: Dental emergencies? We can help." width="1080" height="1350" loading="lazy"></button>
+        <button class="post" type="button" data-zoom="img/post6.webp" data-alt="Publicación propuesta 6" data-group="posts"><img src="img/post6.webp" alt="Publicación propuesta 6: Book your visit" width="1080" height="1350" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 MATERIAL -->
+  <section class="blk s-mat" id="material">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="kicker"><b>03</b><span data-t="k3">Material</span></div>
+        <h2 data-t="h_mat">Su consultorio ya tiene mucho para mostrar</h2>
+        <p data-t="p_mat">Estas son las fotos reales, de su sitio y de su video del consultorio, que usaríamos para dar rostro y lugar a cada publicación.</p>
+      </div>
+
+      <div class="mat">
+        <figure class="ph por rv"><div class="im"><img src="img/dr-gonzalez.webp" alt="Retrato del Dr. Hansel Gonzalez con bata blanca" data-ta="a_m1" width="800" height="921" loading="lazy"></div><figcaption data-t="m1">Dr. Hansel Gonzalez</figcaption></figure>
+        <figure class="ph por rv" style="--d:.06s"><div class="im"><img src="img/dra-abrahao.webp" alt="Retrato de la Dra. Thalia Abrahao con bata blanca" data-ta="a_m2" width="800" height="921" loading="lazy"></div><figcaption data-t="m2">Dra. Thalia Abrahao</figcaption></figure>
+        <figure class="ph land rv" style="--d:.1s"><div class="im"><img src="img/fachada.webp" alt="Entrada del consultorio con el nombre de los doctores, el teléfono y el cartel de Invisalign" data-ta="a_m3" width="1600" height="900" loading="lazy"></div><figcaption data-t="m3">Entrada del consultorio</figcaption></figure>
+        <figure class="ph land rv" style="--d:.14s"><div class="im"><img src="img/recepcion.webp" alt="Recepción con mostrador y paneles de madera oscura" data-ta="a_m4" width="1600" height="900" loading="lazy"></div><figcaption data-t="m4">Recepción</figcaption></figure>
+        <figure class="ph land2 rv"><div class="im"><img src="img/consultorio.webp" alt="Consultorio con sillón dental, lámpara y pantalla" data-ta="a_m5" width="1600" height="900" loading="lazy"></div><figcaption data-t="m5">Sala de atención</figcaption></figure>
+        <figure class="ph land2 rv" style="--d:.06s"><div class="im"><img src="img/sala-espera.webp" alt="Sala de espera con sillones grises y pared azul turquesa" data-ta="a_m6" width="1600" height="900" loading="lazy"></div><figcaption data-t="m6">Sala de espera</figcaption></figure>
+        <figure class="ph land2 rv"><div class="im"><img src="img/dr-gonzalez-tomografia.webp" alt="El Dr. Gonzalez señalando una tomografía en la pantalla" data-ta="a_m7" width="1600" height="900" loading="lazy"></div><figcaption data-t="m7">El Dr. Gonzalez explicando una tomografía</figcaption></figure>
+        <figure class="ph land2 rv" style="--d:.06s"><div class="im"><img src="img/dra-abrahao-consulta.webp" alt="La Dra. Abrahao atendiendo en el consultorio" data-ta="a_m8" width="1600" height="900" loading="lazy"></div><figcaption data-t="m8">La Dra. Abrahao durante una consulta</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="close">
+    <div class="wrap">
+      <div class="close-card rv">
+        <div class="kicker" data-t="c_k">El servicio</div>
+        <h2 data-t="c_h">Gestión mensual de sus redes, <em>para que usted se dedique a sus pacientes</em>.</h2>
+        <p class="lead" data-t="c_p">Nos ocupamos del Instagram de Westchester Dentistry: creamos el contenido, lo publicamos y mantenemos el perfil activo.</p>
+        <div class="svc">
+          <div>
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".8"/></svg>
+            <b data-t="sv1h">Instagram de Westchester Dentistry</b><span data-t="sv1">Un perfil propio del consultorio, con su logo y sus colores.</span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.500v5l4.200-2.500z"/></svg>
+            <b data-t="sv2h">Contenido y Reels</b><span data-t="sv2">Publicaciones diseñadas y videos cortos con fotos reales de su equipo y su consultorio.</span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.300M20 12a8 8 0 0 1-14 5.300"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+            <b data-t="sv3h">Todos los meses</b><span data-t="sv3">Un perfil activo y al día, sin que usted tenga que ocuparse.</span>
+          </div>
+        </div>
+        <p class="brandnote" data-t="c_b">Si más adelante lo desea, también podemos ordenar la identidad visual de sus perfiles.</p>
+        <div class="sign">
+          <p><b>Santiago Capelli · Ticca Mkt</b><span data-t="c_s">Si le interesa, con gusto coordinamos una llamada breve.</span></p>
+          <ul class="contact">
+            <li><a href="https://ticca.agency" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.600 2.800 3.900 5.800 3.900 9s-1.300 6.200-3.900 9c-2.600-2.800-3.900-5.800-3.900-9S9.400 5.800 12 3z"/></svg>ticca.agency</a></li>
+            <li><a href="mailto:capellisantiagoemp@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.500 7.500l8.500 6 8.500-6"/></svg>capellisantiagoemp@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <span data-t="f1">Propuesta preparada para Westchester Dentistry, 8870 SW 40th St, #10, Miami, FL 33165</span>
+        <span data-t="f2">Tel. 305-223-0072</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog id="lb" aria-label="Imagen ampliada">
+  <button type="button" class="lbbtn" id="lbx" aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="lbbtn" id="lbp" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="lbbtn" id="lbn" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="box" id="lbbox"><img id="lbimg" alt=""></div>
+</dialog>
+
+<script>
+(function(){
+  var $=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- EN / ES ---------- */
+  var EN = {
+    title:'Social media proposal for Westchester Dentistry',
+    n1:'Today',n2:'Proposal',n3:'Material',
+    eyebrow:'Social media proposal',
+    h1:'Your social media, at the level of <em>your practice</em>.',
+    lead:'We put together a sample of how the Westchester Dentistry social media could look, with your logo, your colors and real photos of your office.',
+    for:'Prepared for <b>Dr. Hansel Gonzalez</b> · Miami, FL',
+    p1:'Where you are today',p2:'How it could look',p3:'Material we already have',
+    g50:'5.0',g224:'224 Google reviews',
+    k1:'Today',h_hoy:'An excellent starting point',
+    p_hoy:'Your patients already speak very highly of you on Google. This is what we found today on Instagram.',
+    s1n:'5.0',s1:'Google rating',s2:'Google reviews',s3:'followers on @drhanselgonzalez',s4:'posts on that account',
+    c1b:'Instagram, profile',c1:'It is the doctor\'s account, not the practice\'s',c1s:'We did not find an account of its own for Westchester Dentistry.',
+    c2b:'Instagram, posts',c2:'Clinical cases and X-rays',c2s:'8 posts, with no photos of the team or the office.',
+    rv_h:'What your patients say on Google',rv_s:'Google review',
+    k2:'Proposal',h_prop:'This is how your social media could look',
+    p_prop:'Your logo as the profile photo, highlights by treatment and a grid with its own design, in the steel blue and gold of your brand.',
+    n_l1h:'Profile with your brand',n_l1:'The practice emblem as the profile photo, with phone, address and contact buttons in plain sight.',
+    n_l2h:'Highlights',n_l2:'Implants, Invisalign, cosmetic, team, emergencies and how to visit, organized so patients find what they need.',
+    n_l3h:'A consistent grid',n_l3:'Every post with the same style, your colors and your real photos, recognizable at a glance.',
+    tap:'Tap to enlarge',
+    n_r1h:'Introduces your team',n_r1:'Posts that tell who Dr. Gonzalez and Dr. Abrahao are and what their training is.',
+    n_r2h:'Services that are easy to grasp',n_r2:'Implants and All-on-4, Invisalign, veneers, crowns and bridges, in short, clear messages.',
+    n_r3h:'Easy to visit',n_r3:'Address and phone in plain sight, so booking a visit takes a single tap.',
+    ph:'Six examples, up close',ph_p:'Swipe to see more, tap to enlarge',
+    k3:'Material',h_mat:'Your office already has plenty to show',
+    p_mat:'These are the real photos, from your website and your office tour video, that we would use to give every post a face and a place.',
+    m1:'Dr. Hansel Gonzalez',m2:'Dr. Thalia Abrahao',m3:'Office entrance',m4:'Reception',m5:'Treatment room',m6:'Waiting room',m7:'Dr. Gonzalez explaining a CT scan',m8:'Dr. Abrahao during a consultation',
+    c_k:'The service',c_h:'Monthly management of your social media, <em>so you can focus on your patients</em>.',
+    c_p:'We take care of the Westchester Dentistry Instagram: we create the content, publish it and keep the profile active.',
+    sv1h:'Westchester Dentistry Instagram',sv1:'A profile of the practice\'s own, with your logo and your colors.',
+    sv2h:'Content and Reels',sv2:'Designed posts and short videos with real photos of your team and your office.',
+    sv3h:'Every month',sv3:'An active, up-to-date profile, with nothing for you to manage.',
+    c_b:'If you wish, later on we can also tidy up the visual identity of your profiles.',
+    c_s:'If you are interested, we would be glad to set up a short call.',
+    f1:'Proposal prepared for Westchester Dentistry, 8870 SW 40th St, #10, Miami, FL 33165',f2:'Tel. 305-223-0072',
+    a_logo:'Westchester Dentistry logo',a_nav:'Walkthrough',
+    a_hero:'Dr. Gonzalez explaining a CT scan in the office',
+    a_perfil:'Screenshot of the @drhanselgonzalez Instagram profile: 393 followers, 309 following, link to gonzalezdmd.com',
+    a_grilla:'Screenshot of the Instagram grid with X-rays, implant planning and clinical photos',
+    a_phone:'Enlarge the proposed feed',
+    a_feed:'Proposed Instagram feed: profile with emblem, highlights and a grid of six designed posts',
+    a_rail:'Proposed posts',
+    a_m1:'Portrait of Dr. Hansel Gonzalez in a white coat',a_m2:'Portrait of Dr. Thalia Abrahao in a white coat',
+    a_m3:'Office entrance with the doctors\' names, the phone number and the Invisalign sign',
+    a_m4:'Reception with a desk and dark wood panels',a_m5:'Treatment room with a dental chair, light and screen',
+    a_m6:'Waiting room with gray armchairs and a turquoise wall',a_m7:'Dr. Gonzalez pointing at a CT scan on the screen',a_m8:'Dr. Abrahao seeing a patient in the office'
+  };
+  var ES = {};
+  $('[data-t]').forEach(function(el){ES[el.dataset.t]=el.innerHTML});
+  $('[data-ta]').forEach(function(el){var k=el.dataset.ta;var a=el.tagName==='IMG'?'alt':'aria-label';ES[k]=el.getAttribute(a)});
+  var DICT={es:ES,en:EN}, lang='es';
+  function setLang(l,save){
+    lang=l; var D=DICT[l]; document.documentElement.lang=l;
+    $('[data-t]').forEach(function(el){var v=D[el.dataset.t]; if(v!=null) el.innerHTML=v});
+    $('[data-ta]').forEach(function(el){var v=D[el.dataset.ta]; if(v==null) return; el.setAttribute(el.tagName==='IMG'?'alt':'aria-label',v)});
+    document.title=D.title;
+    $('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l)});
+    var ph=$('.rail .post'); ph.forEach(function(b,i){b.dataset.alt=(l==='en'?'Proposed post ':'Publicación propuesta ')+(i+1)});
+    $('[data-zoom]').forEach(function(el){var im=el.querySelector('img'); if(im&&el.dataset.group==='hoy') el.dataset.alt=im.alt});
+    var rp=document.getElementById('rp'),rn=document.getElementById('rn');
+    rp.setAttribute('aria-label',l==='en'?'Previous':'Anterior'); rn.setAttribute('aria-label',l==='en'?'Next':'Siguiente');
+    var lx=document.getElementById('lbx'),lp=document.getElementById('lbp'),ln=document.getElementById('lbn');
+    lx.setAttribute('aria-label',l==='en'?'Close':'Cerrar'); lp.setAttribute('aria-label',rp.getAttribute('aria-label')); ln.setAttribute('aria-label',rn.getAttribute('aria-label'));
+    document.getElementById('lb').setAttribute('aria-label',l==='en'?'Enlarged image':'Imagen ampliada');
+    if(save){try{localStorage.setItem('wd-lang',l)}catch(e){}}
+  }
+  $('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang,true)})});
+  var start='es';
+  try{var q=new URLSearchParams(location.search).get('lang'); if(q==='en'||q==='es') start=q; else {var s=localStorage.getItem('wd-lang'); if(s==='en'||s==='es') start=s}}catch(e){}
+  if(start!=='es') setLang(start);
+
+  /* ---------- reveal ---------- */
+  var rv=$('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* ---------- contadores (llaman la atención sobre las cifras reales) ---------- */
+  if('IntersectionObserver' in window && !reduce){
+    var co=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return; co.unobserve(e.target);
+      var el=e.target,end=+el.dataset.count,t0=performance.now(),d=900;
+      (function tick(t){var k=Math.min(1,(t-t0)/d),v=Math.round(end*(1-Math.pow(1-k,3)));el.textContent=v;if(k<1)requestAnimationFrame(tick)})(t0);
+    })},{threshold:.6});
+    $('[data-count]').forEach(function(el){co.observe(el)});
+  }
+
+  /* ---------- nav activa ---------- */
+  if('IntersectionObserver' in window){
+    var links=$('.steps a');
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    ['hoy','propuesta','material'].forEach(function(id){so.observe(document.getElementById(id))});
+  }
+
+  /* ---------- tilt del celular (solo mouse) ---------- */
+  var ph=document.getElementById('phone');
+  if(ph && !reduce && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    ph.addEventListener('pointermove',function(e){var r=ph.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ph.style.transform='rotateY('+(x*6)+'deg) rotateX('+(-y*3)+'deg)'});
+    ph.addEventListener('pointerleave',function(){ph.style.transform=''});
+  }
+
+  /* ---------- carrusel: flechas ---------- */
+  var rail=document.getElementById('rail');
+  function step(dir){var c=rail.querySelector('.post');rail.scrollBy({left:dir*(c.offsetWidth+16),behavior:reduce?'auto':'smooth'})}
+  document.getElementById('rp').addEventListener('click',function(){step(-1)});
+  document.getElementById('rn').addEventListener('click',function(){step(1)});
+
+  /* ---------- lightbox ---------- */
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),box=document.getElementById('lbbox'),lp=document.getElementById('lbp'),ln=document.getElementById('lbn');
+  var items=[],idx=0;
+  function show(i){idx=i;var el=items[i];img.src=el.dataset.zoom;img.alt=el.dataset.alt||'';box.scrollTop=0;
+    lb.classList.toggle('wide',false);var multi=items.length>1;lp.style.display=ln.style.display=multi?'':'none'}
+  function open(el){var g=el.dataset.group;items=g?$('[data-group="'+g+'"]'):[el];show(items.indexOf(el));if(lb.showModal)lb.showModal();else lb.setAttribute('open','')}
+  function close(){lb.close?lb.close():lb.removeAttribute('open')}
+  $('[data-zoom]').forEach(function(el){
+    el.addEventListener('click',function(){open(el)});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  lp.addEventListener('click',function(){show((idx-1+items.length)%items.length)});
+  ln.addEventListener('click',function(){show((idx+1)%items.length)});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===box)close()});
+  lb.addEventListener('keydown',function(e){if(items.length>1){if(e.key==='ArrowLeft')show((idx-1+items.length)%items.length);if(e.key==='ArrowRight')show((idx+1)%items.length)}});
+})();
+</script>
+</body>
+</html>
